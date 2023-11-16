@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body class="font-principal bg-background-farmapp flex flex-col min-h-screen">
+
+    <header class="bg-white">
+
+        <nav class="wrapper h-20 flex items-center justify-between bg-fondoblanco">
+
+            <a href="./index.html" class="w-1/3 max-w-[150px]">
+                <img src="./images/logo.png" class="w-full ">
+            </a>
+
+            <input type="checkbox" id="menu" class="peer hidden">
+
+            <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"></label>
+
+            <div class="fixed inset-0 bg-gradient-to-b from-white/70 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform z-40 md:static md:bg-none md:translate-x-0">
+
+                <ul class="absolute inset-x-0 top-24 p-12 bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static">
+
+                    <li>
+                        <a class="transition duration-500 transform hover:scale-100 hover:text-green-500" href="index.html">Inicio</a>
+                    </li>
+        
+                    <li>
+                        <a class="transition duration-500 transform hover:scale-100 hover:text-green-500" href="sobrenosotros.html">Sobre Nosotros</a>
+                    </li>
+        
+                    <li>
+                        <a class="transition duration-500 transform hover:scale-100 hover:text-green-500" href="contacto.html">Contacto</a>
+                    </li>
+        
+                    <li>
+                        <a class="transition duration-500 transform hover:scale-100 hover:text-green-500" href="preguntas.html">Preguntas</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </nav>
+        </header>
+
+    <main class="flex-grow">
+
+        <section class="wrapper text-center py-8 grid gap-4  md:text-left ">
+
+            <article>
+
+                <h2 class="text-2xl font-bold text-very-dark-blue mb-6 md:text-3xl">Preguntas Frecuentes
+                </h2>
+
+                 
+
+            </article>
+
+            <div class="grid gap-12">
+
+                <article class="space-y-4 md:space-y-6">
+
+                    <p class="bg-very-pale-red rounded-l-full font-bold flex items-center md:bg-transparent">
+                        <span class="bg-bright-red text-white px-6 rounded-full py-2">
+                            01
+                        </span>
+                        <span class="flex-1 p-2">
+                            ¿Cómo funciona el servicio de búsqueda de farmacias?
+                        </span>
+                    </p>
+
+                    <p class="text-dark-grayish-blue text-left">Nuestra plataforma utiliza la ubicación del usuario y la información de las obras sociales para encontrar las farmacias cercanas que aceptan dichas obras sociales.</p>
+
+                </article>
+
+                <article class="space-y-4 md:space-y-6">
+
+                    <p class="bg-very-pale-red rounded-l-full font-bold flex items-center md:bg-transparent">
+                        <span class="bg-bright-red text-white px-6 rounded-full py-2">
+                            02
+                        </span>
+                        <span class="flex-1 p-2">
+                            ¿Cómo puedo ver los detalles de una farmacia específica?
+                        </span>
+                    </p>
+
+                    <p class="text-dark-grayish-blue text-left"> Al hacer clic en el marcador de una farmacia en el mapa o en la lista de resultados, podrás acceder a información detallada, como dirección, horarios de atención y servicios ofrecidos.
+
+                    </p>
+
+                </article>
+
+                <article class="space-y-4 md:space-y-6">
+
+                    <p class="bg-very-pale-red rounded-l-full font-bold flex items-center md:bg-transparent">
+                        <span class="bg-bright-red text-white px-6 rounded-full py-2">
+                            03
+                        </span>
+                        <span class="flex-1 p-2">
+                            ¿La plataforma ofrece información sobre medicamentos disponibles en cada farmacia?
+                        </span>
+                    </p>
+
+                    <p class="text-dark-grayish-blue text-left">Actualmente, nos enfocamos en proporcionar información sobre la ubicación de las farmacias y las obras sociales admitidas. La disponibilidad de medicamentos específicos puede variar y se recomienda contactar directamente a la farmacia para obtener información detallada.
+                    </p>
+                </article>
+
+                <article class="space-y-4 md:space-y-6">
+
+                    <p class="bg-very-pale-red rounded-l-full font-bold flex items-center md:bg-transparent">
+                        <span class="bg-bright-red text-white px-6 rounded-full py-2">
+                            04
+                        </span>
+                        <span class="flex-1 p-2">
+                            ¿Qué debo hacer si tengo problemas técnicos al usar la plataforma?
+                        </span>
+                    </p>
+
+                    <p class="text-dark-grayish-blue text-left">Si experimentas problemas técnicos, puedes ponerse en contacto con nuestro equipo de soporte técnico a través de la sección de "Contacto" en el sitio web o enviando un correo electrónico a support@farmapp.com
+                    </p>
+                </article>
+            </div>
+
+        </section>
+    </main> 
+    
+    
+    <footer class="py-3 bg-fondoblanco">
+        <section class="wrapper justify-items-center footer-area md:footer-area-md md:grid-cols-3 md:justify-items-stretch">    
+            <p class="text-dark-grayish-blue text-center [grid-area:copy] md:text-left">© Copyright 2023. Todos los derechos reservados | Farmapp S.A</p>
+        </section>
+    </footer>
+
+
+</body>
+</html>

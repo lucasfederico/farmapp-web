@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmapp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body class="font-principal bg-background-farmapp flex flex-col min-h-screen">
+    <header class="bg-white">
+      <nav
+        class="wrapper h-20 flex items-center justify-between bg-fondoblanco"
+      >
+        <a href="./index.html" class="w-1/3 max-w-[150px]">
+          <img src="./images/logo.png" class="w-full" />
+        </a>
+
+        <input type="checkbox" id="menu" class="peer hidden" />
+
+        <label
+          for="menu"
+          class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"
+        ></label>
+
+        <div
+          class="fixed inset-0 bg-gradient-to-b from-white/70 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform z-40 md:static md:bg-none md:translate-x-0"
+        >
+          <ul
+            class="absolute inset-x-0 top-24 p-12 bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static"
+          >
+            <li>
+              <a
+                class="transition duration-500 transform hover:scale-100 hover:text-green-500"
+                href="index.html"
+                >Inicio</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="transition duration-500 transform hover:scale-100 hover:text-green-500"
+                href="sobrenosotros.html"
+                >Sobre Nosotros</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="transition duration-500 transform hover:scale-100 hover:text-green-500"
+                href="contacto.html"
+                >Contacto</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="transition duration-500 transform hover:scale-100 hover:text-green-500"
+                href="preguntas.html"
+                >Preguntas</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- <a href="#" class="button shadow-sm shadow-bright-red/30 hidden py-3 lg:block">Buscar</a> -->
+      </nav>
+    </header>
+    <!--SECCION - LOGO Y LOS INPUT-->
+    <section
+      class="flex-grow wrapper grid gap-8 justify-items-center items-center pb-12 pt-16 md:py-24"
+    >
+      <div
+        class="text-center space-y-6 flex-col justify-center items-center md:text-left md:space-y-8"
+      >
+        <!-- <h1 class="text-4xl font-bold text-very-dark-blue md:text-5xl">Bring everyone together to build better products.
+                </h1>  -->
+
+        <img src="./images/logo-inicio.png" class="w-full max-w-lg md:order-1" />
+
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Ingresar Localidad"
+          class="text-center block w-full rounded-md border-0 py-1.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+        />
+
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Ingresar Documento"
+          class="text-center block w-full rounded-md border-0 py-1.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+        />
+
+        <a href="#" class="button w-full text-center md:w-1/2 md:mx-auto  ">Buscar</a>
+      </div>
+    </section>
+
+    <figure class="absolute inset-0 overflow-hidden pointer-events-none">
+      <img
+        src="./images/bg-tablet-pattern.svg"
+        class="absolute w-full -z-10 -top-24 -right-1/4 max-w-2xl"
+      />
+    </figure>
+    <footer class="py-2 bg-fondoblanco">
+      <section
+        class="wrapper justify-items-center footer-area md:footer-area-md md:grid-cols-3 md:justify-items-stretch"
+      >
+        <p
+          class="text-dark-grayish-blue text-center [grid-area:copy] md:text-left"
+        >
+          © Copyright 2023. Todos los derechos reservados | Farmapp S.A
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
